@@ -14,11 +14,11 @@ def generate_launch_description():
     return LaunchDescription([
         # Include the first launch script
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource('/root/r2ware/src/r2ware_sensing/launch/r2ware_sensing_launch.py'),
+            PythonLaunchDescriptionSource('/root/r2ware/src/sensing/r2ware_sensing/launch/r2ware_sensing_launch.py'),
         ),
 
         # Include the second launch script
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource('/root/r2ware/src/r2ware_control/launch/r2ware_control_launch.py'),
+            PythonLaunchDescriptionSource('/root/r2ware/src/control/r2ware_control/launch/r2ware_control_launch.py'),
         ),
     ])
