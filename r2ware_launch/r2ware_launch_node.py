@@ -4,7 +4,7 @@ from rosgraph_msgs.msg import Clock
 
 class ClockPublisher(Node):
     def __init__(self):
-        super().__init__('clock_publisher')
+        super().__init__('r2ware_launch_node')
         self.clock_publisher = self.create_publisher(Clock, '/clock', 10)
 
         # Create a timer to publish clock data at 100 Hz

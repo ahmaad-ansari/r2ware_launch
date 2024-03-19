@@ -28,4 +28,9 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource('/root/r2ware/src/control/r2ware_control/launch/r2ware_control_launch.py'),
         ),
+
+        # Include the third launch script
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource('/root/r2ware/src/status/r2ware_status/launch/r2ware_status_launch.py'),
+        ),
     ])
